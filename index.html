@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <script>
+      $(document).ready(function () {
+        $('#calculate').click(function () {
+          let age = $('#age').val();
+          let cost = 5 * age + 300;
+          $('#result')
+            .text('$' + cost)
+            .fadeIn();
+        });
+
+        $('#clear').click(function () {
+          $('#age').val('');
+          $('#result').fadeOut();
+        });
+      });
+    </script>
+    <main>
+      <h1>Life Insurance</h1>
+      <label for="age">Age</label>
+      <input type="number" id="age" />
+      <br />
+      <br />
+      <button id="calculate">Calculate</button>
+      <button id="clear">Clear</button>
+      <p id="result" style="display: none"></p>
+    </main>
+  </body>
+</html>

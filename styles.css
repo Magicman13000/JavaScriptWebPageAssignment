@@ -1,0 +1,28 @@
+body {
+  background-color: rgb(245, 241, 241);
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+input[type='text'] {
+  font-size: 18px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+button {
+  font-size: 18px;
+  padding: 10px 20px;
+  margin-right: 20px;
+  width: 100px;
+}
+
+#result {
+  font-size: 24px;
+  margin-top: 20px;
+}
